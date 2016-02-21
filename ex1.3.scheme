@@ -1,0 +1,13 @@
+; Exercise 3.1
+; define a function that
+; takes 3 numbers,
+; and returns the sum of the squares
+; of the two largest.
+
+(define (sum-of-squares a b)
+  (+ (* a a) (* b b)))
+
+(define (sos2 x y z)
+  (cond ((and (<= x y) (<= x z))
+         (sum-of-squares y z))
+        (else (sos2 y z x))))
