@@ -11,3 +11,23 @@
   (cond ((and (<= x y) (<= x z))
          (sum-of-squares y z))
         (else (sos2 y z x))))
+
+;;; Reflection
+
+; unsatisfying on many levels.
+; one is tempted into trying (< a b c);
+; and (hopefully) noticing that
+; it is the same as (and (< a b) (< b c))
+; which is not what we want this time.
+
+; We haven't been told how to sort a list, or
+; extract items from a list,
+; so we have to do some tedious comparison.
+
+; we haven't been told how
+; to apply a function to a list,
+; so we can't split the problem
+; into a function to find and return
+; the largest 2 numbers
+; and another function
+; that calls sum-of-squares on it.
