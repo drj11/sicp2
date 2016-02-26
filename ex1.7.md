@@ -18,3 +18,9 @@ In 64 bit doubles the best square root is 9007199254740992.0
 The square of this number is 8.112963841460668e+31.
 Which differs from the radicand by 1.8014398509481984e+16.
 It will never be `good-enough?`.
+
+## Reflection
+
+I had to do my experiments in Python because the Chicken Scheme
+interpreter does not print floating point values to full
+precision.
