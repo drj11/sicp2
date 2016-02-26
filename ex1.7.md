@@ -24,3 +24,17 @@ It will never be `good-enough?`.
 I had to do my experiments in Python because the Chicken Scheme
 interpreter does not print floating point values to full
 precision.
+
+## Code
+
+There is code that implements the alternative strategy suggested
+by the text.
+
+## Reflection
+
+1. My `good-enough?` test uses the previous value, and it is now
+simplest if this procedure is defined inside `sqrt-iter` which
+isn't something that we get told about until later: page 30.
+
+2. Because this algorithm converges so awesomely fast it is
+reasonable to use exact equality in the `good-enough?`.
