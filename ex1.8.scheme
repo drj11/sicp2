@@ -1,0 +1,18 @@
+; `prev` is the previous guess.
+(define (cbrt-iter guess prev x)
+
+  (define (good-enough?)
+    (= guess prev))
+
+  (if (good-enough?)
+      guess
+      (sqrt-iter (improve guess x) guess x)))
+
+(define (improve y x)
+  (/ (+ (/ x (* y y)) (* 2 y)) 3))
+
+(define (average x y)
+  (/ (+ x y) 2))
+
+(define (cbrt radicand)
+  (cbrt-iter (/ radicand 3) (/ radicand 2) radicand))
