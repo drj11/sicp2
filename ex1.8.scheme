@@ -6,7 +6,7 @@
 
   (if (good-enough?)
       guess
-      (sqrt-iter (improve guess x) guess x)))
+      (cbrt-iter (improve guess x) guess x)))
 
 (define (improve y x)
   (/ (+ (/ x (* y y)) (* 2 y)) 3))
