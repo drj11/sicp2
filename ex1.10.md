@@ -11,3 +11,10 @@ had to look up on wikipedia.
 \                                  /
  ------ n times -------------------
  ```
+
+## Reflection
+
+This seems a bit naughty.
+Tetration is not an operation that
+most people will have heard of,
+and it doesn't really have a well defined mathematical name.
