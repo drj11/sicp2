@@ -26,3 +26,12 @@
 ; the result is 0.
 ; In other words:
 ; if (not (<= 0 col row)) then the result is 0.
+
+;;; Reflection
+; It's not particular obvious what the exercise requires.
+; "A procedure that computes elements of Pascal's triangle"
+; All of them? Row by row?
+; One at a time (as I have done).
+; I think adding: "the procedure should take `row` and `column`
+; as arguments and return the computed element at that position"
+; would be helpful.
