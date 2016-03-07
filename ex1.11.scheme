@@ -1,0 +1,24 @@
+;;; Exercise 1.11
+
+; recursive
+(define (f n)
+  (cond ((< n 3) n)
+        (else (+ (f (- n 1)) (* 2 (f (- n 2))) (* 3 (f (- n 3)))))))
+
+; iterative
+(define (fi n)
+  (f-iter 0 1 2 n))
+
+(define (f-iter a b c n)
+  (cond ((< n 2) n)
+        ((= n 2) c)
+        (else (f-iter b c (+ c (* 2 b) (* 3 a)) (- n 1)))))
+
+;;; Reflection
+; The recursive form seems to practically write itself.
+; Consistent with the paragraph at the bottom of page 41.
+; The use of `n` in `fact-iter` is unsatisfactory.
+; What is `n`?
+; It counts down to 2 which is a base case.
+; It may be better to count up and use a `max-count` variable
+; as the text does with `fact-iter` (page 34).
