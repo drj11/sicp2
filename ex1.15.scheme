@@ -1,0 +1,17 @@
+# Exercise 1.15
+
+a) 5 times.
+
+`p` is called with the sines of angles:
+
+4.05
+1.35
+0.45
+0.15
+0.05
+
+(the computation (sine 0.05) does not call `p` since the angle
+is sufficiently small)
+
+b) The number of steps is `n` where (a / 3^n) < 0.1.
+so `n` grows with `log a`.
